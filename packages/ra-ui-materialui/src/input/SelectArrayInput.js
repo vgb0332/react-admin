@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
-import Input from '@material-ui/core/Input';
+import FilledInput from '@material-ui/core/FilledInput';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Chip from '@material-ui/core/Chip';
@@ -181,6 +181,7 @@ export class SelectArrayInput extends Component {
             className,
             isRequired,
             label,
+            margin = 'dense',
             meta,
             options,
             resource,
@@ -188,6 +189,7 @@ export class SelectArrayInput extends Component {
             optionText,
             optionValue,
             helperText,
+            variant = 'filled',
             ...rest
         } = this.props;
         if (typeof meta === 'undefined') {
@@ -215,7 +217,7 @@ export class SelectArrayInput extends Component {
                 <Select
                     autoWidth
                     multiple
-                    input={<Input id={source} />}
+                    input={<FilledInput id={source} />}
                     value={this.state.value}
                     error={!!(touched && error)}
                     renderValue={selected => (
@@ -237,6 +239,8 @@ export class SelectArrayInput extends Component {
                         </div>
                     )}
                     data-testid="selectArray"
+                    margin={margin}
+                    variant={variant}
                     {...options}
                     onChange={this.handleChange}
                 >

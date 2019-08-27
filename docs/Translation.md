@@ -99,6 +99,7 @@ You can find translation packages for the following languages:
 - Turkish (`tr`): [KamilGunduz/ra-language-turkish](https://github.com/KamilGunduz/ra-language-turkish)
 - Ukrainian (`ua`): [koresar/ra-language-ukrainian](https://github.com/koresar/ra-language-ukrainian)
 - Vietnamese (`vi`): [hieunguyendut/ra-language-vietnamese](https://github.com/hieunguyendut/ra-language-vietnamese)
+- Korean ('kr'): [vgb0332/ra-language-korean](https://github.com/vgb0332/ra-language-korean)
 
 In addition, the previous version of react-admin, called admin-on-rest, was translated in the following languages:
 
